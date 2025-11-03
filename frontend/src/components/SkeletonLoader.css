@@ -1,0 +1,56 @@
+.skeleton-avatar {
+    border-radius: var(--radius-full);
+}
+
+.skeleton-text {
+    border-radius: var(--radius-sm);
+    margin: 0.25rem 0;
+}
+
+.skeleton-button {
+    border-radius: var(--radius-md);
+}
+
+.skeleton-conversation {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.skeleton-conversation-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skeleton-message {
+    display: flex;
+    margin-bottom: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.skeleton-message.received {
+    justify-content: flex-start;
+}
+
+.skeleton-message.sent {
+    justify-content: flex-end;
+}
+
+.skeleton-message-bubble {
+    width: 60%;
+    height: 50px;
+    border-radius: var(--radius-lg);
+}
+
+.skeleton-message.sent .skeleton-message-bubble {
+    max-width: 300px;
+}
+
+.skeleton-message.received .skeleton-message-bubble {
+    max-width: 350px;
+}
+

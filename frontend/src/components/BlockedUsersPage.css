@@ -1,0 +1,328 @@
+.blocked-users-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.blocked-users-page::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(239, 68, 68, 0.1) 0%, transparent 70%);
+    animation: float 18s ease-in-out infinite;
+}
+
+.background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.blocked-users-container {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 0 auto;
+    background: var(--bg-primary);
+    min-height: 100vh;
+    box-shadow: var(--shadow-xl);
+    animation: slideInUp 0.5s ease;
+}
+
+.blocked-users-header {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+    color: var(--text-inverse);
+    box-shadow: var(--shadow-lg);
+}
+
+.back-button {
+    background: var(--primary);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--text-inverse);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.625rem;
+    border-radius: var(--radius-md);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+    margin-right: 1.25rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.blocked-users-header h1 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.blocked-users-content {
+    padding: 2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100vh - 120px);
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--bg-tertiary);
+}
+
+.blocked-users-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.blocked-users-content::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+.blocked-users-content::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: var(--radius-full);
+}
+
+.blocked-users-content::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--text-secondary);
+    animation: fadeIn 0.5s ease;
+}
+
+.empty-icon {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.5;
+    filter: grayscale(30%);
+}
+
+.empty-state h3 {
+    margin: 0 0 0.75rem 0;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.empty-state p {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 500;
+}
+
+.blocked-users-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.blocked-user-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    background: var(--bg-secondary);
+    transition: all var(--transition-base);
+    animation: slideInLeft 0.3s ease;
+}
+
+.blocked-user-item:hover {
+    background: var(--bg-tertiary);
+    border-color: #FEE2E2;
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.user-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    color: var(--text-inverse);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.user-info {
+    flex: 1;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 0.25rem;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.blocked-date {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    font-weight: 500;
+}
+
+.unblock-btn {
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    color: var(--text-inverse);
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+    white-space: nowrap;
+}
+
+.unblock-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.unblock-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .blocked-users-container {
+        margin: 0;
+        box-shadow: none;
+    }
+    
+    .blocked-users-header {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .blocked-users-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .back-button {
+        width: 36px;
+        height: 36px;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+    
+    .blocked-users-content {
+        padding: 1.5rem;
+        max-height: calc(100vh - 90px);
+    }
+    
+    .blocked-user-item {
+        padding: 1rem;
+    }
+    
+    .user-avatar {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+
+    .user-info h3 {
+        font-size: 0.875rem;
+    }
+
+    .unblock-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .blocked-users-header {
+        padding: 1rem 1.25rem;
+    }
+    
+    .blocked-users-header h1 {
+        font-size: 1.25rem;
+    }
+
+    .back-button {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+        padding: 0.4rem;
+        margin-right: 0.75rem;
+    }
+    
+    .blocked-users-content {
+        padding: 1rem;
+        max-height: calc(100vh - 80px);
+    }
+
+    .blocked-users-list {
+        gap: 0.625rem;
+    }
+    
+    .blocked-user-item {
+        padding: 0.875rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .user-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9375rem;
+        margin-right: 0.75rem;
+        margin-bottom: 0;
+    }
+    
+    .user-info {
+        gap: 0.125rem;
+    }
+
+    .user-info h3 {
+        font-size: 0.8125rem;
+    }
+    
+    .unblock-btn {
+        align-self: auto;
+        text-align: center;
+        padding: 0.5rem 0.875rem;
+        font-size: 0.75rem;
+    }
+}

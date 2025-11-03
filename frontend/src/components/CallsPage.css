@@ -1,0 +1,325 @@
+.calls-page {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 0.4s ease;
+}
+
+.calls-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+    color: var(--text-inverse);
+    box-shadow: var(--shadow-lg);
+    animation: slideInDown 0.4s ease;
+}
+
+.calls-header h2 {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.new-call-btn {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--text-inverse);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: var(--radius-full);
+    width: 48px;
+    height: 48px;
+    font-size: 1.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+}
+
+.new-call-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-lg);
+}
+
+.calls-list {
+    flex: 1;
+    overflow-y: auto;
+    background: var(--bg-primary);
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--bg-tertiary);
+}
+
+.calls-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.calls-list::-webkit-scrollbar-track {
+    background: var(--bg-tertiary);
+}
+
+.calls-list::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: var(--radius-full);
+}
+
+.calls-list::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}
+
+.call-item {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    border-bottom: 1px solid var(--border-light);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    animation: slideInLeft 0.3s ease;
+}
+
+.call-item:hover {
+    background: var(--bg-secondary);
+    transform: translateX(4px);
+}
+
+.call-item:last-child {
+    border-bottom: none;
+}
+
+.call-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--text-inverse);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-right: 1.25rem;
+    box-shadow: var(--shadow-md);
+}
+
+.call-info {
+    flex: 1;
+}
+
+.call-info h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.call-details {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9375rem;
+}
+
+.call-type {
+    font-size: 1.125rem;
+}
+
+.call-type.incoming {
+    color: var(--secondary);
+}
+
+.call-type.outgoing {
+    color: var(--primary);
+}
+
+.call-type.missed {
+    color: #EF4444;
+}
+
+.call-timestamp,
+.call-duration {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.call-actions .call-back-btn {
+    background: var(--bg-secondary);
+    border: none;
+    color: var(--primary);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm);
+    font-size: 0.875rem;
+}
+
+.call-actions .call-back-btn:hover {
+    background: var(--primary);
+    color: var(--text-inverse);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.call-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.call-screen {
+    background: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    width: 90%;
+    max-width: 480px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow-xl);
+    animation: slideInUp 0.4s ease;
+}
+
+.call-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.call-header h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.call-content {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.caller-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--text-inverse);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 0 auto 1.5rem;
+    box-shadow: var(--shadow-lg);
+    animation: pulse 2s infinite;
+}
+
+.call-status {
+    font-size: 1.375rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.call-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.end-call-btn {
+    background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+    color: var(--text-inverse);
+    border: none;
+    border-radius: var(--radius-full);
+    width: 72px;
+    height: 72px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-lg);
+}
+
+.end-call-btn:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-xl);
+}
+
+.end-call-btn:active {
+    transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    .calls-header {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .calls-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .call-item {
+        padding: 1rem 1.5rem;
+    }
+    
+    .call-avatar {
+        width: 48px;
+        height: 48px;
+        font-size: 1.125rem;
+    }
+    
+    .call-screen {
+        padding: 2rem;
+    }
+    
+    .caller-avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calls-header {
+        padding: 1rem 1.25rem;
+    }
+    
+    .calls-header h2 {
+        font-size: 1.375rem;
+    }
+    
+    .new-call-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 1.5rem;
+    }
+    
+    .call-item {
+        padding: 0.875rem 1.25rem;
+    }
+    
+    .call-screen {
+        padding: 1.5rem;
+    }
+    
+    .end-call-btn {
+        width: 64px;
+        height: 64px;
+        font-size: 1.125rem;
+    }
+}

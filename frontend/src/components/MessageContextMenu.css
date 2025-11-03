@@ -1,0 +1,84 @@
+.context-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9998;
+}
+
+.message-context-menu {
+    position: fixed;
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    min-width: 220px;
+    z-index: 9999;
+    overflow: hidden;
+    border: 1px solid var(--border-light);
+    animation: slideInUp 0.2s ease;
+}
+
+.context-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1.25rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.875rem; /* Reduced from 0.9375rem */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .message-context-menu {
+        min-width: 150px; /* Smaller on mobile */
+        font-size: 0.8125rem;
+    }
+    
+    .context-menu-item {
+        padding: 0.5rem 0.75rem; /* Smaller padding */
+        font-size: 0.75rem; /* Smaller text */
+    }
+    
+    .context-menu-icon {
+        margin-right: 0.5rem;
+        font-size: 0.875rem; /* Smaller icons */
+    }
+}
+
+@media (max-width: 480px) {
+    .message-context-menu {
+        min-width: 130px; /* Even smaller on small mobile */
+    }
+    
+    .context-menu-item {
+        padding: 0.45rem 0.65rem; /* Smaller padding */
+        font-size: 0.6875rem; /* Smaller text */
+    }
+    
+    .context-menu-icon {
+        font-size: 0.8125rem; /* Smaller icons */
+    }
+}
+
+.context-menu-item:hover {
+    background: var(--bg-tertiary);
+}
+
+.context-menu-item.cancel {
+    color: var(--text-secondary);
+    justify-content: center;
+}
+
+.context-menu-icon {
+    margin-right: 0.75rem;
+    font-size: 0.9375rem; /* Reduced from 1.125rem */
+}
+
+.context-menu-divider {
+    height: 1px;
+    background: #edf2fa;
+    /* margin: 0.5rem 0; */
+}
