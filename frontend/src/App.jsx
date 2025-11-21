@@ -11,6 +11,7 @@ import SettingsPage from './components/SettingsPage';
 import ProfilePage from './components/ProfilePage';
 import BlockedUsersPage from './components/BlockedUsersPage';
 import FriendRequestsPage from './components/FriendRequestsPage';
+import NotFoundPage from './components/NotFoundPage';
 import './App.css';
 
 const ProtectedRoute = ({ children }) => {
@@ -41,74 +42,75 @@ function App() {
                 <Router>
                     <div className="app">
                         <Routes>
-                        <Route
-                            path="/"
-                            element={<Navigate to="/login" />}
-                        />
-                        <Route
-                            path="/login"
-                            element={<AuthPage />}
-                        />
-                        <Route
-                            path="/profile-setup"
-                            element={<ProfileSetup />}
-                        />
-                        <Route
-                            path="/chats"
-                            element={
-                                <ProtectedRoute>
-                                    <ChatPage />
-                                </ProtectedRoute>
-                            }
-                        />
-                        <Route
-                            path="/contacts"
-                            element={
-                                <ProtectedRoute>
-                                    {/* <ContactsPage /> */}
-                                </ProtectedRoute>
-                            }
-                        />
-                        <Route
-                            path="/calls"
-                            element={
-                                <ProtectedRoute>
-                                    {/* <CallsPage /> */}
-                                </ProtectedRoute>
-                            }
-                        />
-                        <Route
-                            path="/settings"
-                            element={
-                                <ProtectedRoute>
-                                    <SettingsPage />
-                                </ProtectedRoute>
-                            }
-                        />
-                        <Route
-                            path="/profile"
-                            element={
-                                <ProtectedRoute>
-                                    <ProfilePage />
-                                </ProtectedRoute>
-                            }
-                        />
-                        <Route
-                            path="/blocked-users"
-                            element={
-                                <ProtectedRoute>
-                                    <BlockedUsersPage />
-                                </ProtectedRoute>
-                            }
-                        />
-                        <Route
-                            path="/friend-requests"
-                            element={
-                                <ProtectedRoute>
-                                    <FriendRequestsPage />
-                                </ProtectedRoute>
-                            }
-                        />
+                            <Route
+                                path="/"
+                                element={<Navigate to="/login" />}
+                            />
+                            <Route
+                                path="/login"
+                                element={<AuthPage />}
+                            />
+                            <Route
+                                path="/profile-setup"
+                                element={<ProfileSetup />}
+                            />
+                            <Route
+                                path="/chats"
+                                element={
+                                    <ProtectedRoute>
+                                        <ChatPage />
+                                    </ProtectedRoute>
+                                }
+                            />
+                            <Route
+                                path="/contacts"
+                                element={
+                                    <ProtectedRoute>
+                                        {/* <ContactsPage /> */}
+                                    </ProtectedRoute>
+                                }
+                            />
+                            <Route
+                                path="/calls"
+                                element={
+                                    <ProtectedRoute>
+                                        {/* <CallsPage /> */}
+                                    </ProtectedRoute>
+                                }
+                            />
+                            <Route
+                                path="/settings"
+                                element={
+                                    <ProtectedRoute>
+                                        <SettingsPage />
+                                    </ProtectedRoute>
+                                }
+                            />
+                            <Route
+                                path="/profile"
+                                element={
+                                    <ProtectedRoute>
+                                        <ProfilePage />
+                                    </ProtectedRoute>
+                                }
+                            />
+                            <Route
+                                path="/blocked-users"
+                                element={
+                                    <ProtectedRoute>
+                                        <BlockedUsersPage />
+                                    </ProtectedRoute>
+                                }
+                            />
+                            <Route
+                                path="/friend-requests"
+                                element={
+                                    <ProtectedRoute>
+                                        <FriendRequestsPage />
+                                    </ProtectedRoute>
+                                }
+                            />
+                            <Route path="*" element={<NotFoundPage />} />
                         </Routes>
                     </div>
                 </Router>
