@@ -97,7 +97,7 @@ async def log_requests(request: Request, call_next):
 # Configure CORS - MUST be added before routes
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://chatting-app-uqoy.onrender.com"],
+    allow_origins=["https://messaging-app-phi-three.vercel.app"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["*"],
@@ -109,7 +109,7 @@ app.add_middleware(
 async def http_exception_handler(request: Request, exc: HTTPException):
     """Handle HTTP exceptions and ensure CORS headers are included"""
     origin = request.headers.get("origin")
-    allowed_origins = ["https://chatting-app-uqoy.onrender.com"]
+    allowed_origins = ["https://messaging-app-phi-three.vercel.app"]
     
     headers = {}
     if origin in allowed_origins:
@@ -132,7 +132,7 @@ async def global_exception_handler(request: Request, exc: Exception):
         safe_print("Traceback contains Unicode - check logs")
     
     origin = request.headers.get("origin")
-    allowed_origins = ["https://chatting-app-uqoy.onrender.com"]
+    allowed_origins = ["https://messaging-app-phi-three.vercel.app"]
     
     headers = {}
     if origin in allowed_origins:
@@ -149,7 +149,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
     """Handle validation errors with CORS headers"""
     origin = request.headers.get("origin")
-    allowed_origins = ["https://chatting-app-uqoy.onrender.com"]
+    allowed_origins = ["https://messaging-app-phi-three.vercel.app"]
     
     headers = {}
     if origin in allowed_origins:
