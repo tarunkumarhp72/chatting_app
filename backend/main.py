@@ -62,7 +62,7 @@ app = FastAPI(
         {"name": "WebSocket", "description": "WebSocket endpoints"},
     ],
     # Configure default JSON response class to preserve Unicode
-    default_response_class=UnicodeJSONResponse,
+    default_response_class=UnicodeJSONResponse
 )
 
 # Mount static files directory for uploads with CORS headers
