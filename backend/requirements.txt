@@ -1,6 +1,6 @@
 fastapi
 uvicorn[standard]
-sqlalchemy
+SQLAlchemy>=2.0.36
 psycopg2-binary
 pydantic
 pydantic[email]
@@ -11,4 +11,4 @@ websockets
 python-dotenv
 pydantic_settings
 bcrypt
-email-validator
+email-validator 
