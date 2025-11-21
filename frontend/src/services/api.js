@@ -1,6 +1,6 @@
 import axios from 'axios';
-
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
+//base url
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'aphttp://localhost:8000/i';
 
 const api = axios.create({
     baseURL: API_BASE_URL,
@@ -109,7 +109,7 @@ export const userAPI = {
 
     unblockUser: (userId, unblockedUserId) =>
         api.post(`/users/unblock/${unblockedUserId}?user_id=${userId}`),
-    
+
     getBlockedUsers: () =>
         api.get('/users/blocked'),
 };
@@ -119,9 +119,9 @@ export const friendAPI = {
     sendFriendRequest: (receiverId) =>
         api.post(`/friends/request/${receiverId}`),
 
-    updateFriendRequest: (requestId, status) => 
+    updateFriendRequest: (requestId, status) =>
         api.put(`/friends/request/${requestId}`, { status }),
-    
+
     cancelFriendRequest: (requestId) =>
         api.delete(`/friends/request/${requestId}`),
 
@@ -133,7 +133,7 @@ export const friendAPI = {
 
     getContacts: () =>
         api.get('/friends/contacts'),
-    
+
     getAcceptedContacts: () =>
         api.get('/friends/contacts/accepted'),
 
@@ -165,12 +165,12 @@ export const messageAPI = {
 export const conversationAPI = {
     muteConversation: (conversationId, userId) =>
         api.post(`/conversations/${conversationId}/mute?user_id=${userId}`),
-    
+
     unmuteConversation: (conversationId, userId) =>
         api.post(`/conversations/${conversationId}/unmute?user_id=${userId}`),
     getConversations: () =>
         api.get('/conversations/'),
-    
+
     getOrCreateConversation: (userId) =>
         api.get(`/conversations/with/${userId}`),
 };

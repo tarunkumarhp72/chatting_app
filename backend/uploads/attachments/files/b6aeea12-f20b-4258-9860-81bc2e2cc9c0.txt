@@ -1,0 +1,490 @@
+
+=============================================================================================== Business Details ===============================================================================================
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+Name: YCOM NORWAY AS
+PhoneNumber: +4723507256
+Content: Velkommen til Ycom
+Full Payload: {'original_id': 'bizdetails:9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'BusinessCategoryId': 4, 'PhoneNumber': '+4723507256', 'Name': 'YCOM NORWAY AS', 'FriendlyName': None, 'LanguageId': 'no', 'kind': 'business_details', 'content': 'Velkommen til Ycom'}
+
+
+
+========================================================================================== Business Prompt Template =========================================================================================
+
+
+original_id: bizprompt:9ebf79ad-ff71-4205-8988-08ddfe66e5a9:no:allround:1
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+BusinessPromptTemplateId: 1
+BusinessCategoryId: 4
+CategoryPromptTemplateId: 1
+PhoneNumber: +4723507256
+PersonaName: allround
+Content: [SYSTEMKONTEKST]
+Dagens dato: {CURRENT_DAY_NAME} {CURRENT_DATE}
+Klokkeslett nå: {CURRENT_TIME} (lokal tid)
+[SLUTT SYSTEMKONTEKST]
+
+Du er {AGENT_NAME}, en AI resepsjonist hos {CLINIC_NAME}. {PERSONA_PROMPT}
+
+Her er informasjon om klinikken:
+{CLINIC_INFO_JSON}
+
+Tidligere samtalehistorikk:
+{CONVERSATION_HISTORY}
+
+Bruk verktøyene kun når intensjon er bekreftet.
+
+Venligst tast inn personnummeret ditt etterfulgt av #.
+
+Tast inn de åtte sifrene i telefonnummeret etterfulgt av #.
+
+Beklager, prøv igjen. Tast elleve siffer etterfulgt av #.
+
+Beklager, prøv igjen. Tast åtte siffer etterfulgt av #.
+
+Setter deg over nå.
+
+Beklager, kan ikke videresende. La meg ta en beskjed.
+
+Jeg beklager at jeg ikke kan hjelpe direkte. Jeg legger igjen en beskjed.
+
+Aldri les hele personnummeret høyt.
+Full Payload: {'original_id': 'bizprompt:9ebf79ad-ff71-4205-8988-08ddfe66e5a9:no:allround:1', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'BusinessPromptTemplateId': 1, 'BusinessCategoryId': 4, 'CategoryPromptTemplateId': 1, 'LanguageId': 'no', 'PersonaName': 'allround', 'SourceCategoryVersion': 1, 'Version': 1, 'PhoneNumber': '+4723507256', 'kind': 'business_prompt_template', 'legacyPrompt': '[SYSTEMKONTEKST]\nDagens dato: {CURRENT_DAY_NAME} {CURRENT_DATE}\nKlokkeslett nå: {CURRENT_TIME} (lokal tid)\n[SLUTT SYSTEMKONTEKST]\r\n\r\nDu er {AGENT_NAME}, en AI resepsjonist hos {CLINIC_NAME}. {PERSONA_PROMPT}\r\n\r\nHer er informasjon om klinikken:\n{CLINIC_INFO_JSON}\r\n\r\nTidligere samtalehistorikk:\n{CONVERSATION_HISTORY}\r\n\r\nBruk verktøyene kun når intensjon er bekreftet.\r\n\r\nVenligst tast inn personnummeret ditt etterfulgt av #.\r\n\r\nTast inn de åtte sifrene i telefonnummeret etterfulgt av #.\r\n\r\nBeklager, prøv igjen. Tast elleve siffer etterfulgt av #.\r\n\r\nBeklager, prøv igjen. Tast åtte siffer etterfulgt av #.\r\n\r\nSetter deg over nå.\r\n\r\nBeklager, kan ikke videresende. La meg ta en beskjed.\r\n\r\nJeg beklager at jeg ikke kan hjelpe direkte. Jeg legger igjen en beskjed.\r\n\r\nAldri les hele personnummeret høyt.', 'compiledPrompt': '[SYSTEMKONTEKST]\nDagens dato: {CURRENT_DAY_NAME} {CURRENT_DATE}\nKlokkeslett nå: {CURRENT_TIME} (lokal tid)\n[SLUTT SYSTEMKONTEKST]\r\n\r\nDu er {AGENT_NAME}, en AI resepsjonist hos {CLINIC_NAME}. {PERSONA_PROMPT}\r\n\r\nHer er informasjon om klinikken:\n{CLINIC_INFO_JSON}\r\n\r\nTidligere samtalehistorikk:\n{CONVERSATION_HISTORY}\r\n\r\nBruk verktøyene kun når intensjon er bekreftet.\r\n\r\nVenligst tast inn personnummeret ditt etterfulgt av #.\r\n\r\nTast inn de åtte sifrene i telefonnummeret etterfulgt av #.\r\n\r\nBeklager, prøv igjen. Tast elleve siffer etterfulgt av #.\r\n\r\nBeklager, prøv igjen. Tast åtte siffer etterfulgt av #.\r\n\r\nSetter deg over nå.\r\n\r\nBeklager, kan ikke videresende. La meg ta en beskjed.\r\n\r\nJeg beklager at jeg ikke kan hjelpe direkte. Jeg legger igjen en beskjed.\r\n\r\nAldri les hele personnummeret høyt.', 'hasSegments': True, 'hasFragments': True, 'hasTools': True, 'hasModelCfg': True, 'content': '[SYSTEMKONTEKST]\nDagens dato: {CURRENT_DAY_NAME} {CURRENT_DATE}\nKlokkeslett nå: {CURRENT_TIME} (lokal tid)\n[SLUTT SYSTEMKONTEKST]\r\n\r\nDu er {AGENT_NAME}, en AI resepsjonist hos {CLINIC_NAME}. {PERSONA_PROMPT}\r\n\r\nHer er informasjon om klinikken:\n{CLINIC_INFO_JSON}\r\n\r\nTidligere samtalehistorikk:\n{CONVERSATION_HISTORY}\r\n\r\nBruk verktøyene kun når intensjon er bekreftet.\r\n\r\nVenligst tast inn personnummeret ditt etterfulgt av #.\r\n\r\nTast inn de åtte sifrene i telefonnummeret etterfulgt av #.\r\n\r\nBeklager, prøv igjen. Tast elleve siffer etterfulgt av #.\r\n\r\nBeklager, prøv igjen. Tast åtte siffer etterfulgt av #.\r\n\r\nSetter deg over nå.\r\n\r\nBeklager, kan ikke videresende. La meg ta en beskjed.\r\n\r\nJeg beklager at jeg ikke kan hjelpe direkte. Jeg legger igjen en beskjed.\r\n\r\nAldri les hele personnummeret høyt.'}
+
+
+
+========================================================================================== Website Knowledge Chunks =========================================================================================
+
+
+original_id: chunk:d4c31612-69a7-4231-a3b5-f8ccbbab9298
+ChunkId: d4c31612-69a7-4231-a3b5-f8ccbbab9298
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Digital-identiet/12525
+Title: P
+DateScraped: 2025-11-14T00:02:06.1388413-08:00
+Content: Opening Solutions Verdens ledende leverandør av adgangsløsninger for dører
+Full Payload: {'original_id': 'chunk:d4c31612-69a7-4231-a3b5-f8ccbbab9298', 'Id': 'd4c31612-69a7-4231-a3b5-f8ccbbab9298', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Digital-identiet/12525', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:06.1388413-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Opening Solutions Verdens ledende leverandør av adgangsløsninger for dører'}
+
+
+
+original_id: chunk:810abf05-e8ed-47ee-915a-9a0834c44369
+ChunkId: 810abf05-e8ed-47ee-915a-9a0834c44369
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Digital-identiet/12525
+Title: P
+DateScraped: 2025-11-14T00:02:06.1388692-08:00
+Content: post@ycomgroup.com
++47 22 12 03 00
+​Ycom Group
+​Lørenveien 73, 2. etasje
+0580 Oslo
+Norway
+Org. nr.: 994 485 962
+Full Payload: {'original_id': 'chunk:810abf05-e8ed-47ee-915a-9a0834c44369', 'Id': '810abf05-e8ed-47ee-915a-9a0834c44369', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Digital-identiet/12525', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:06.1388692-08:00', 'kind': 'website_knowledge_chunk', 'content': 'post@ycomgroup.com\r\n+47 22 12 03 00\r\n\u200bYcom Group\r\n\u200bLørenveien 73, 2. etasje\r\n0580 Oslo\r\nNorway\r\nOrg. nr.: 994 485 962'}
+
+
+
+original_id: chunk:cd3c2ead-2d40-46f9-bfab-bab5ce14cb77
+ChunkId: cd3c2ead-2d40-46f9-bfab-bab5ce14cb77
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/tjenester/10636
+Title: P
+DateScraped: 2025-11-14T00:01:55.8971437-08:00
+Content: Effektiv ITS & feilhåndtering for en viktig aktør i norsk energisektor.
+Les mer
+Full Payload: {'original_id': 'chunk:cd3c2ead-2d40-46f9-bfab-bab5ce14cb77', 'Id': 'cd3c2ead-2d40-46f9-bfab-bab5ce14cb77', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/tjenester/10636', 'Title': 'P', 'DateScraped': '2025-11-14T00:01:55.8971437-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Effektiv ITS &\xa0feilhåndtering\xa0for en viktig aktør i norsk energisektor.\r\nLes mer'}
+
+
+
+original_id: chunk:d3066d90-eb20-45c2-a51d-3dd59d0915ce
+ChunkId: d3066d90-eb20-45c2-a51d-3dd59d0915ce
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/austad/12697
+Title: P
+DateScraped: 2025-11-14T00:02:31.7463295-08:00
+Content: Spesialtilpasset nettbutikk og kursportal for en internasjonal farmasi gigant
+Full Payload: {'original_id': 'chunk:d3066d90-eb20-45c2-a51d-3dd59d0915ce', 'Id': 'd3066d90-eb20-45c2-a51d-3dd59d0915ce', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/austad/12697', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:31.7463295-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Spesialtilpasset nettbutikk og kursportal for en internasjonal farmasi gigant'}
+
+
+
+original_id: chunk:654ad0a2-89f2-482e-9374-cde7c4dbb38c
+ChunkId: 654ad0a2-89f2-482e-9374-cde7c4dbb38c
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/
+Title: P
+DateScraped: 2025-11-14T00:01:41.0552479-08:00
+Content: Omnii
+Your Order
+Ex Pub 
+Digitaltoppgjør
+Full Payload: {'original_id': 'chunk:654ad0a2-89f2-482e-9374-cde7c4dbb38c', 'Id': '654ad0a2-89f2-482e-9374-cde7c4dbb38c', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/', 'Title': 'P', 'DateScraped': '2025-11-14T00:01:41.0552479-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Omnii\r\nYour Order\r\nEx Pub\xa0\r\nDigitaltoppgjør'}
+
+
+
+original_id: chunk:8c0bd68a-3f88-4479-ab2d-6788f9a2e98e
+ChunkId: 8c0bd68a-3f88-4479-ab2d-6788f9a2e98e
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/#ContactForm
+Title: H2
+DateScraped: 2025-11-14T00:02:01.4653921-08:00
+Content: I tett samarbeid med kundene er vi kreative problemløsere med formål om å utvikle bærekraftige digitale kundereiser som gir økt effekt og preferanse.
+Full Payload: {'original_id': 'chunk:8c0bd68a-3f88-4479-ab2d-6788f9a2e98e', 'Id': '8c0bd68a-3f88-4479-ab2d-6788f9a2e98e', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/#ContactForm', 'Title': 'H2', 'DateScraped': '2025-11-14T00:02:01.4653921-08:00', 'kind': 'website_knowledge_chunk', 'content': 'I tett samarbeid med kundene er vi kreative problemløsere med formål om å\xa0utvikle bærekraftige digitale kundereiser som gir økt effekt og preferanse.'}
+
+
+
+original_id: chunk:942071dc-bbb5-4650-b261-d545aa26a735
+ChunkId: 942071dc-bbb5-4650-b261-d545aa26a735
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Omnii/12625
+Title: P
+DateScraped: 2025-11-14T00:02:50.9615481-08:00
+Content: En stor utfordring ved dagens digitalisering er å holde seg innenfor regelverket ved innsamling av big data.
+Full Payload: {'original_id': 'chunk:942071dc-bbb5-4650-b261-d545aa26a735', 'Id': '942071dc-bbb5-4650-b261-d545aa26a735', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Omnii/12625', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:50.9615481-08:00', 'kind': 'website_knowledge_chunk', 'content': 'En stor utfordring ved dagens digitalisering er å holde seg innenfor regelverket ved innsamling av big data.'}
+
+
+
+original_id: chunk:b7af95a7-259b-49ca-a976-245774ff0d40
+ChunkId: b7af95a7-259b-49ca-a976-245774ff0d40
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/innsikt-strategi-design/12522
+Title: P
+DateScraped: 2025-11-14T00:03:34.6396459-08:00
+Content: Effektiv ITS & error management in the Norwegian energy sector.
+Full Payload: {'original_id': 'chunk:b7af95a7-259b-49ca-a976-245774ff0d40', 'Id': 'b7af95a7-259b-49ca-a976-245774ff0d40', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/innsikt-strategi-design/12522', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:34.6396459-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Effektiv ITS & error management in the Norwegian energy sector.'}
+
+
+
+original_id: chunk:afa46001-4561-4204-9d81-aa978e3818a5
+ChunkId: afa46001-4561-4204-9d81-aa978e3818a5
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/products/10637
+Title: H2
+DateScraped: 2025-11-14T00:02:19.8533561-08:00
+Content: Gjennom årene har de smarte hodene i Ycom utviklet relevante, bærekraftige og fremtidsrettede produkter. Fra publisering til databasestyring, big data og ordrehåndtering.
+Full Payload: {'original_id': 'chunk:afa46001-4561-4204-9d81-aa978e3818a5', 'Id': 'afa46001-4561-4204-9d81-aa978e3818a5', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/products/10637', 'Title': 'H2', 'DateScraped': '2025-11-14T00:02:19.8533561-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Gjennom årene har de smarte hodene i Ycom utviklet relevante, bærekraftige og fremtidsrettede produkter. Fra publisering til databasestyring, big data og ordrehåndtering.'}
+
+
+
+original_id: chunk:3eaf208f-aadc-4e46-971a-3052ac567ab1
+ChunkId: 3eaf208f-aadc-4e46-971a-3052ac567ab1
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Privacy-Policy/12527
+Title: P
+DateScraped: 2025-11-14T00:04:06.0022695-08:00
+Content: Storage
+We do not store personal information beyond what is necessary to fulfill the purpose of the processing. If you have a customer relationship with us, personal information will be stored about you.
+Full Payload: {'original_id': 'chunk:3eaf208f-aadc-4e46-971a-3052ac567ab1', 'Id': '3eaf208f-aadc-4e46-971a-3052ac567ab1', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Privacy-Policy/12527', 'Title': 'P', 'DateScraped': '2025-11-14T00:04:06.0022695-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Storage\r\nWe do not store personal information beyond what is necessary to fulfill the purpose of the processing. If you have a customer relationship with us, personal information will be stored about you.'}
+
+
+
+original_id: chunk:c340289e-e58f-4e67-ae5f-11bcad9d918a
+ChunkId: c340289e-e58f-4e67-ae5f-11bcad9d918a
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Omnii/12625
+Title: P
+DateScraped: 2025-11-14T00:02:50.961499-08:00
+Content: Konseptet omnikanal datafangst er å samle data fra alle kanaler og gjøre den tilgjengelig og brukbar. I dagens digitale samfunn ønsker man mest mulig innsikt om brukeren for å kunne tilrettelegge produkter, tjenester og innhold til å treffe brukerens faktiske behov.
+Full Payload: {'original_id': 'chunk:c340289e-e58f-4e67-ae5f-11bcad9d918a', 'Id': 'c340289e-e58f-4e67-ae5f-11bcad9d918a', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Omnii/12625', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:50.961499-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Konseptet omnikanal datafangst er å samle data fra alle kanaler og gjøre den tilgjengelig og brukbar. I dagens digitale samfunn ønsker man mest mulig innsikt om brukeren for å kunne tilrettelegge produkter, tjenester og innhold til å treffe brukerens faktiske behov.'}
+
+
+
+original_id: chunk:167861a1-d387-46d3-b565-9613ac5a6f76
+ChunkId: 167861a1-d387-46d3-b565-9613ac5a6f76
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/innsikt-strategi-design/12522
+Title: P
+DateScraped: 2025-11-14T00:02:16.2486299-08:00
+Content: Total leverandør av logistikk- og skadehåndtering for bilbransjen.
+Full Payload: {'original_id': 'chunk:167861a1-d387-46d3-b565-9613ac5a6f76', 'Id': '167861a1-d387-46d3-b565-9613ac5a6f76', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/innsikt-strategi-design/12522', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:16.2486299-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Total leverandør av logistikk- og skadehåndtering for bilbransjen.'}
+
+
+
+original_id: chunk:8d5893fe-a560-4d26-b24a-cdb07d7cdb3f
+ChunkId: 8d5893fe-a560-4d26-b24a-cdb07d7cdb3f
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/services/10636
+Title: P
+DateScraped: 2025-11-14T00:03:19.0665774-08:00
+Content: From publishing to database management, big data and order management.
+Full Payload: {'original_id': 'chunk:8d5893fe-a560-4d26-b24a-cdb07d7cdb3f', 'Id': '8d5893fe-a560-4d26-b24a-cdb07d7cdb3f', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/services/10636', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:19.0665774-08:00', 'kind': 'website_knowledge_chunk', 'content': 'From publishing to database management, big data and order management.'}
+
+
+
+original_id: chunk:8c809514-27d7-4654-9003-c9a901352585
+ChunkId: 8c809514-27d7-4654-9003-c9a901352585
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Roche/12631
+Title: P
+DateScraped: 2025-11-14T00:03:44.6864453-08:00
+Content: Customized online store and course portal for an International pharmaceutical giant
+Full Payload: {'original_id': 'chunk:8c809514-27d7-4654-9003-c9a901352585', 'Id': '8c809514-27d7-4654-9003-c9a901352585', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Roche/12631', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:44.6864453-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Customized online store and course portal for an International pharmaceutical giant'}
+
+
+
+original_id: chunk:73fdc667-9f86-4cf0-948f-35ad3fd2887d
+ChunkId: 73fdc667-9f86-4cf0-948f-35ad3fd2887d
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Technology-and-Development/12524
+Title: H2
+DateScraped: 2025-11-14T00:04:01.2634031-08:00
+Content: In close co-operation with our clients, we create custom integrated digital solutions that empower them to stand out in a crowded marketplace.
+Full Payload: {'original_id': 'chunk:73fdc667-9f86-4cf0-948f-35ad3fd2887d', 'Id': '73fdc667-9f86-4cf0-948f-35ad3fd2887d', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Technology-and-Development/12524', 'Title': 'H2', 'DateScraped': '2025-11-14T00:04:01.2634031-08:00', 'kind': 'website_knowledge_chunk', 'content': 'In close co-operation with our clients, we create custom\xa0integrated digital solutions that empower them to stand out in a crowded marketplace.'}
+
+
+
+original_id: chunk:38e97b69-f0ba-4cb4-ae81-42c6616d7c4b
+ChunkId: 38e97b69-f0ba-4cb4-ae81-42c6616d7c4b
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Altinn/12632
+Title: P
+DateScraped: 2025-11-14T00:03:41.1869286-08:00
+Content: A website for Norway's famous ultrasound clinic
+Full Payload: {'original_id': 'chunk:38e97b69-f0ba-4cb4-ae81-42c6616d7c4b', 'Id': '38e97b69-f0ba-4cb4-ae81-42c6616d7c4b', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Altinn/12632', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:41.1869286-08:00', 'kind': 'website_knowledge_chunk', 'content': "A website for Norway's famous ultrasound clinic"}
+
+
+
+original_id: chunk:0cc3b079-c934-4508-9d70-358d076cdbdc
+ChunkId: 0cc3b079-c934-4508-9d70-358d076cdbdc
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Omnil/12625
+Title: P
+DateScraped: 2025-11-14T00:04:15.7440675-08:00
+Content: I fremtidens retail ønsker man å kartlegge brukerens bevegelser og handlingsmønster i 360 grader. Dette betyr datafangst i alle kanaler, like mye den fysiske butikken som i de digitale kanalene. Omnii er svært fleksibel og kan tilpasses til å fange ønskede data og spore brukeren i alle ledd.
+Full Payload: {'original_id': 'chunk:0cc3b079-c934-4508-9d70-358d076cdbdc', 'Id': '0cc3b079-c934-4508-9d70-358d076cdbdc', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Omnil/12625', 'Title': 'P', 'DateScraped': '2025-11-14T00:04:15.7440675-08:00', 'kind': 'website_knowledge_chunk', 'content': 'I fremtidens retail ønsker man å kartlegge brukerens bevegelser og handlingsmønster i 360 grader. Dette betyr datafangst i alle kanaler, like mye den fysiske butikken som i de digitale kanalene. Omnii er svært fleksibel og kan tilpasses til å fange ønskede data og spore brukeren i alle ledd.'}
+
+
+
+original_id: chunk:7c6a5bb5-0f1c-4822-a470-d0f5a865a0f9
+ChunkId: 7c6a5bb5-0f1c-4822-a470-d0f5a865a0f9
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/austad/12697
+Title: H2
+DateScraped: 2025-11-14T00:03:38.0579973-08:00
+Content: A website for Norway’s famous ultrasound clinic.
+Full Payload: {'original_id': 'chunk:7c6a5bb5-0f1c-4822-a470-d0f5a865a0f9', 'Id': '7c6a5bb5-0f1c-4822-a470-d0f5a865a0f9', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/austad/12697', 'Title': 'H2', 'DateScraped': '2025-11-14T00:03:38.0579973-08:00', 'kind': 'website_knowledge_chunk', 'content': 'A website for Norway’s famous ultrasound clinic.'}
+
+
+
+original_id: chunk:99954fcd-8730-4997-b81c-94d02cf984c6
+ChunkId: 99954fcd-8730-4997-b81c-94d02cf984c6
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Digitale-losninger/12523
+Title: H2
+DateScraped: 2025-11-14T00:03:30.8835347-08:00
+Content: In close co-operation with our clients, we create custom integrated digital solutions that empower them to stand out in a crowded marketplace.
+Full Payload: {'original_id': 'chunk:99954fcd-8730-4997-b81c-94d02cf984c6', 'Id': '99954fcd-8730-4997-b81c-94d02cf984c6', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Digitale-losninger/12523', 'Title': 'H2', 'DateScraped': '2025-11-14T00:03:30.8835347-08:00', 'kind': 'website_knowledge_chunk', 'content': 'In close co-operation with our clients, we create custom\xa0integrated digital solutions that empower them to stand out in a crowded marketplace.'}
+
+
+
+original_id: chunk:acb652e9-3d10-44a7-88af-6adfbc1ee847
+ChunkId: acb652e9-3d10-44a7-88af-6adfbc1ee847
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/produkter/10637
+Title: P
+DateScraped: 2025-11-14T00:01:50.355526-08:00
+Content: Nå er det på tide å tenke nytt vedrørende din hjemmeside!
+Full Payload: {'original_id': 'chunk:acb652e9-3d10-44a7-88af-6adfbc1ee847', 'Id': 'acb652e9-3d10-44a7-88af-6adfbc1ee847', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/produkter/10637', 'Title': 'P', 'DateScraped': '2025-11-14T00:01:50.355526-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Nå er det på tide å tenke nytt vedrørende din hjemmeside!'}
+
+
+
+original_id: chunk:14d3cc5c-000f-4007-abe1-6f73fac09f32
+ChunkId: 14d3cc5c-000f-4007-abe1-6f73fac09f32
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Personvern/12527
+Title: P
+DateScraped: 2025-11-14T00:03:05.8608186-08:00
+Content: Vennligst se kontaktinformasjon nedenfor om du ønsker å komme i kontakt med oss, hvis du har ønske om å slette eller redigere personlig informasjon som vi behandler.
+Full Payload: {'original_id': 'chunk:14d3cc5c-000f-4007-abe1-6f73fac09f32', 'Id': '14d3cc5c-000f-4007-abe1-6f73fac09f32', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Personvern/12527', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:05.8608186-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Vennligst se kontaktinformasjon nedenfor om du ønsker å komme i kontakt med oss, hvis du har ønske om å slette eller redigere personlig informasjon som vi behandler.'}
+
+
+
+original_id: chunk:18a96f85-d21e-4288-86eb-67500fe1f192
+ChunkId: 18a96f85-d21e-4288-86eb-67500fe1f192
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Omnii/12625
+Title: P
+DateScraped: 2025-11-14T00:03:51.668986-08:00
+Content: Omnii increases insight and expertise on how to attract, convert, sell and inspire. With Omnii you can cut costs in your business, create automated routines with the help of AI, robotics or streamline customer service with smart chatbots.
+Full Payload: {'original_id': 'chunk:18a96f85-d21e-4288-86eb-67500fe1f192', 'Id': '18a96f85-d21e-4288-86eb-67500fe1f192', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Omnii/12625', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:51.668986-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Omnii increases insight and expertise on how to attract, convert, sell and inspire. With Omnii you can cut costs in your business, create automated routines with the help of AI, robotics or streamline customer service with smart chatbots.'}
+
+
+
+original_id: chunk:798f581a-eb19-455d-ab8a-231cd9f2dbcd
+ChunkId: 798f581a-eb19-455d-ab8a-231cd9f2dbcd
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Roche/12631
+Title: P
+DateScraped: 2025-11-14T00:02:39.3657941-08:00
+Content: Spesialtilpasset nettbutikk og kursportal for en internasjonal farmasi gigant
+Full Payload: {'original_id': 'chunk:798f581a-eb19-455d-ab8a-231cd9f2dbcd', 'Id': '798f581a-eb19-455d-ab8a-231cd9f2dbcd', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Roche/12631', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:39.3657941-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Spesialtilpasset nettbutikk og kursportal for en internasjonal farmasi gigant'}
+
+
+
+original_id: chunk:25b853d2-9613-42ad-bdfa-2c38ee738481
+ChunkId: 25b853d2-9613-42ad-bdfa-2c38ee738481
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Digitale-l%C3%B8sninger/12523
+Title: P
+DateScraped: 2025-11-14T00:02:57.3306241-08:00
+Content: post@ycomgroup.com
++47 22 12 03 00
+​Ycom Group
+​Lørenveien 73, 2. etasje
+0580 Oslo
+Norway
+Org. nr.: 994 485 962
+Full Payload: {'original_id': 'chunk:25b853d2-9613-42ad-bdfa-2c38ee738481', 'Id': '25b853d2-9613-42ad-bdfa-2c38ee738481', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Digitale-l%C3%B8sninger/12523', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:57.3306241-08:00', 'kind': 'website_knowledge_chunk', 'content': 'post@ycomgroup.com\r\n+47 22 12 03 00\r\n\u200bYcom Group\r\n\u200bLørenveien 73, 2. etasje\r\n0580 Oslo\r\nNorway\r\nOrg. nr.: 994 485 962'}
+
+
+
+original_id: chunk:eab6462c-b471-45d0-afba-3deee5d89a2e
+ChunkId: eab6462c-b471-45d0-afba-3deee5d89a2e
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Insight-Strategy--Design/12522
+Title: P
+DateScraped: 2025-11-14T00:03:55.4739931-08:00
+Content: Pioneering and cost-effective reading for submission of important documents
+Full Payload: {'original_id': 'chunk:eab6462c-b471-45d0-afba-3deee5d89a2e', 'Id': 'eab6462c-b471-45d0-afba-3deee5d89a2e', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Insight-Strategy--Design/12522', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:55.4739931-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Pioneering and cost-effective reading for submission of important documents'}
+
+
+
+original_id: chunk:de24086f-4300-4844-be77-6480f6419f43
+ChunkId: de24086f-4300-4844-be77-6480f6419f43
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/
+Title: P
+DateScraped: 2025-11-14T00:01:41.0552525-08:00
+Content: Dagens Næringsliv
+Gaselle Winner
+2017 & 2018
+Full Payload: {'original_id': 'chunk:de24086f-4300-4844-be77-6480f6419f43', 'Id': 'de24086f-4300-4844-be77-6480f6419f43', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/', 'Title': 'P', 'DateScraped': '2025-11-14T00:01:41.0552525-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Dagens Næringsliv\r\nGaselle Winner\r\n2017 & 2018'}
+
+
+
+original_id: chunk:11f83092-5b59-4c1a-8d9f-a43b2c4d278c
+ChunkId: 11f83092-5b59-4c1a-8d9f-a43b2c4d278c
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Privacy-Policy/12527
+Title: P
+DateScraped: 2025-11-14T00:04:06.002268-08:00
+Content: Personal data may be disclosed to public authorities if this follows from statutory duty of disclosure or disclosure obligation.
+Full Payload: {'original_id': 'chunk:11f83092-5b59-4c1a-8d9f-a43b2c4d278c', 'Id': '11f83092-5b59-4c1a-8d9f-a43b2c4d278c', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Privacy-Policy/12527', 'Title': 'P', 'DateScraped': '2025-11-14T00:04:06.002268-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Personal data may be disclosed to public authorities if this follows from statutory duty of disclosure or disclosure obligation.'}
+
+
+
+original_id: chunk:e756b663-3e07-4d29-a0aa-63123041a319
+ChunkId: e756b663-3e07-4d29-a0aa-63123041a319
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Digitale-l%C3%B8sninger/12523
+Title: P
+DateScraped: 2025-11-14T00:02:57.3306162-08:00
+Content: Med fokus på kvalitet, innovasjon og smarte løsninger former vi norsk infrastruktur og møter fremtiden med fagkunnskap og robuste kabler som tåler norske forhold. NEK Kabel har mer enn hundre års erfaring med å levere kvalitetskabler til det norske markedet
+Full Payload: {'original_id': 'chunk:e756b663-3e07-4d29-a0aa-63123041a319', 'Id': 'e756b663-3e07-4d29-a0aa-63123041a319', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Digitale-l%C3%B8sninger/12523', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:57.3306162-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Med fokus på kvalitet, innovasjon og smarte løsninger former vi norsk infrastruktur og møter fremtiden med fagkunnskap og robuste kabler som tåler norske forhold. NEK Kabel har mer enn hundre års erfaring med å levere kvalitetskabler til det norske markedet'}
+
+
+
+original_id: chunk:8f025578-0fa9-4b38-a8f4-f90605e2fd46
+ChunkId: 8f025578-0fa9-4b38-a8f4-f90605e2fd46
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Start-din-bedrift/15494
+Title: P
+DateScraped: 2025-11-14T00:01:53.1262332-08:00
+Content: Nettsted + logo for oppstartsbedrifter - med fornøydgaranti
+Full Payload: {'original_id': 'chunk:8f025578-0fa9-4b38-a8f4-f90605e2fd46', 'Id': '8f025578-0fa9-4b38-a8f4-f90605e2fd46', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Start-din-bedrift/15494', 'Title': 'P', 'DateScraped': '2025-11-14T00:01:53.1262332-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Nettsted + logo for oppstartsbedrifter - med fornøydgaranti'}
+
+
+
+original_id: chunk:619977a9-ca51-4f65-bd4d-322c50fdf839
+ChunkId: 619977a9-ca51-4f65-bd4d-322c50fdf839
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en
+Title: P
+DateScraped: 2025-11-14T00:01:45.3770926-08:00
+Content: Effektiv ITS & error management in the Norwegian energy sector.
+Full Payload: {'original_id': 'chunk:619977a9-ca51-4f65-bd4d-322c50fdf839', 'Id': '619977a9-ca51-4f65-bd4d-322c50fdf839', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en', 'Title': 'P', 'DateScraped': '2025-11-14T00:01:45.3770926-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Effektiv ITS & error management in the Norwegian energy sector.'}
+
+
+
+original_id: chunk:c88948ea-04af-4a52-b972-111e9c6443e2
+ChunkId: c88948ea-04af-4a52-b972-111e9c6443e2
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/#MainContentSectionsWrapper26617
+Title: P
+DateScraped: 2025-11-14T00:04:11.5922392-08:00
+Content: Et nettsted for Norges berømte ultralydsklinikk
+Full Payload: {'original_id': 'chunk:c88948ea-04af-4a52-b972-111e9c6443e2', 'Id': 'c88948ea-04af-4a52-b972-111e9c6443e2', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/#MainContentSectionsWrapper26617', 'Title': 'P', 'DateScraped': '2025-11-14T00:04:11.5922392-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Et nettsted for Norges berømte ultralydsklinikk'}
+
+
+
+original_id: chunk:5005acdc-0bd9-41cc-9f3b-c3d741af0bd3
+ChunkId: 5005acdc-0bd9-41cc-9f3b-c3d741af0bd3
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Omnii/12625
+Title: P
+DateScraped: 2025-11-14T00:03:51.6689943-08:00
+Content: Omni-channel means many channels, anywhere and anytime. Therefore, Omnikanal marketing is primarily about finding out which channels your customers prefer and how to use them.
+Full Payload: {'original_id': 'chunk:5005acdc-0bd9-41cc-9f3b-c3d741af0bd3', 'Id': '5005acdc-0bd9-41cc-9f3b-c3d741af0bd3', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Omnii/12625', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:51.6689943-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Omni-channel means many channels, anywhere and\xa0anytime. Therefore, Omnikanal marketing is primarily about finding out which channels your customers prefer and how to use them.'}
+
+
+
+original_id: chunk:22034d2b-d433-4ae1-a532-133a3efa2662
+ChunkId: 22034d2b-d433-4ae1-a532-133a3efa2662
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/#ContactForm
+Title: P
+DateScraped: 2025-11-14T00:02:01.4653895-08:00
+Content: Fra publisering til databasestyring, bigdata og orderhåndtering.
+Full Payload: {'original_id': 'chunk:22034d2b-d433-4ae1-a532-133a3efa2662', 'Id': '22034d2b-d433-4ae1-a532-133a3efa2662', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/#ContactForm', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:01.4653895-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Fra publisering til databasestyring, bigdata og orderhåndtering.'}
+
+
+
+original_id: chunk:41fb080b-7cc0-4717-97ef-6256c60b11c6
+ChunkId: 41fb080b-7cc0-4717-97ef-6256c60b11c6
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Helgeland-Kraft/12630
+Title: H2
+DateScraped: 2025-11-14T00:03:47.8772643-08:00
+Content: A custom Issues Tracking System for a leading Norwegian company in the distribution of electricity, Helgeland Kraft. Issues Tracking System (also known as ITS) is a support ticket system that helps manage customer issues more effectively.
+Full Payload: {'original_id': 'chunk:41fb080b-7cc0-4717-97ef-6256c60b11c6', 'Id': '41fb080b-7cc0-4717-97ef-6256c60b11c6', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Helgeland-Kraft/12630', 'Title': 'H2', 'DateScraped': '2025-11-14T00:03:47.8772643-08:00', 'kind': 'website_knowledge_chunk', 'content': 'A custom Issues Tracking System for a leading Norwegian company in the distribution of electricity, Helgeland Kraft. Issues Tracking System (also known as ITS) is a support ticket system that helps manage customer issues more effectively.'}
+
+
+
+original_id: chunk:d43c3425-4d44-46c3-a855-e64b1e35e210
+ChunkId: d43c3425-4d44-46c3-a855-e64b1e35e210
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/en/Digitale-losninger/12523
+Title: P
+DateScraped: 2025-11-14T00:03:30.8835491-08:00
+Content: Total leverandør av logistikk- og skadehåndtering for bilbransjen.
+Full Payload: {'original_id': 'chunk:d43c3425-4d44-46c3-a855-e64b1e35e210', 'Id': 'd43c3425-4d44-46c3-a855-e64b1e35e210', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/en/Digitale-losninger/12523', 'Title': 'P', 'DateScraped': '2025-11-14T00:03:30.8835491-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Total leverandør av logistikk- og skadehåndtering for bilbransjen.'}
+
+
+
+original_id: chunk:8a31bc46-29bf-437c-847a-867022139bf2
+ChunkId: 8a31bc46-29bf-437c-847a-867022139bf2
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Omnil/12625
+Title: P
+DateScraped: 2025-11-14T00:04:15.7440754-08:00
+Content: post@ycomgroup.com
++47 22 12 03 00
+​Ycom Group
+​Lørenveien 73, 2. etasje
+0580 Oslo
+Norway
+Org. nr.: 994 485 962
+Full Payload: {'original_id': 'chunk:8a31bc46-29bf-437c-847a-867022139bf2', 'Id': '8a31bc46-29bf-437c-847a-867022139bf2', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Omnil/12625', 'Title': 'P', 'DateScraped': '2025-11-14T00:04:15.7440754-08:00', 'kind': 'website_knowledge_chunk', 'content': 'post@ycomgroup.com\r\n+47 22 12 03 00\r\n\u200bYcom Group\r\n\u200bLørenveien 73, 2. etasje\r\n0580 Oslo\r\nNorway\r\nOrg. nr.: 994 485 962'}
+
+
+
+original_id: chunk:6577f16d-6b1e-405a-9c9b-03114de7bdda
+ChunkId: 6577f16d-6b1e-405a-9c9b-03114de7bdda
+BusinessId: 9ebf79ad-ff71-4205-8988-08ddfe66e5a9
+SourceUrl: https://www.ycomgroup.com/Roche/12631
+Title: P
+DateScraped: 2025-11-14T00:02:39.365767-08:00
+Content: Vi bidro til utformingen av en nettbutikk som er skreddersydd for det norske markedet for diabetesrelaterte produkter. I tett samarbeid med Roche klarte vi å skape et nettsted som er både nyskapende og moderne. 
+
+Innholdet ble organisert på en måte som ga umiddelbar tilgang til informasjon som trengs for å gjøre kjøpsopplevelsen enkel. Våre utviklere gjorde en fantastisk jobb med å implementere et godt og presis design akkurat slik det var forespeilet kunden. 
+
+Roches nettbutikk ble laget for å være fullt tilgjengelig på alle digitale enheter slik at shopping på farten blir en enkel sak. Å være godt informert er svært viktig for Ycom, og vi inviterer deg til å lære mer om diabetes og produktene Roche tilbyr.
+Full Payload: {'original_id': 'chunk:6577f16d-6b1e-405a-9c9b-03114de7bdda', 'Id': '6577f16d-6b1e-405a-9c9b-03114de7bdda', 'BusinessId': '9ebf79ad-ff71-4205-8988-08ddfe66e5a9', 'SourceUrl': 'https://www.ycomgroup.com/Roche/12631', 'Title': 'P', 'DateScraped': '2025-11-14T00:02:39.365767-08:00', 'kind': 'website_knowledge_chunk', 'content': 'Vi bidro til utformingen av en nettbutikk som er skreddersydd for det norske markedet for diabetesrelaterte produkter. I tett samarbeid med Roche klarte vi å skape et nettsted som er både nyskapende og moderne.\xa0\r\n\r\nInnholdet ble organisert på en måte som ga umiddelbar tilgang til informasjon som trengs for å gjøre kjøpsopplevelsen enkel. Våre utviklere gjorde en fantastisk jobb med å implementere et godt og presis design akkurat slik det var forespeilet kunden.\xa0\r\n\r\nRoches nettbutikk ble laget for å være fullt tilgjengelig på alle digitale enheter slik at shopping på farten blir en enkel sak. Å være godt informert er svært viktig for Ycom, og vi inviterer deg til å lære mer om diabetes og produktene Roche tilbyr.'}
