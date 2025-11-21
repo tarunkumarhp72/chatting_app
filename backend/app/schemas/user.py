@@ -19,8 +19,8 @@ class UserCreate(BaseModel):
     
     @validator('username')
     def validate_username(cls, v):
-        if not re.match(r'^[a-zA-Z0-9_]+$', v):
-            raise ValueError('Username can only contain letters, numbers, and underscores')
+        if not re.match(r'^[a-zA-Z0-9_@.]+$', v):
+            raise ValueError('Username can only contain letters, numbers, underscores, periods, and @ symbols')
         if v.startswith('_') or v.endswith('_'):
             raise ValueError('Username cannot start or end with underscore')
         return v.lower()

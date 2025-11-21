@@ -10,5 +10,4 @@ python-multipart
 websockets
 python-dotenv
 pydantic_settings
-bcrypt
 email-validator 
